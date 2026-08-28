@@ -31,6 +31,9 @@ export default function HomePage() {
         <p className="proof-rail">
           <span>Maria Panning</span>
           <span>Deb Hall</span>
+          <span>Dustin Cumberlin</span>
+          <span>Brandy Cumberlin</span>
+          <span>Samantha Peacock</span>
           <span>Valarie Mountfort</span>
           <span>Chelsea Heilman</span>
           <span>Tessa Parker, Champion Beach House</span>
@@ -102,12 +105,14 @@ export default function HomePage() {
           <p className="kicker">In their words</p>
           <h2 className="section-title">Proof, not a sales letter.</h2>
           <div className="grid-2" style={{ marginTop: "2rem" }}>
-            {quotes.slice(0, 2).map((quote) => (
+            {quotes.slice(0, 4).map((quote) => (
               <Quote key={quote.name} quote={quote} />
             ))}
           </div>
           <p style={{ marginTop: "1.5rem" }}>
-            <Link href="/stories/">Read Maria, Deb, Valarie, Chelsea, and Tessa</Link>
+            <Link href="/stories/">
+              Read Maria, Deb, Dustin, Brandy, Samantha, Valarie, Chelsea, and Tessa
+            </Link>
           </p>
         </div>
       </section>

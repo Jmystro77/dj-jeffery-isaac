@@ -74,7 +74,8 @@ HTML5 players: controls on, no autoplay, no autoplay sound. Promo ads are not on
 - Phone: 330-240-0915
 - Email: djjefferyisaac@gmail.com only
 - Offer: DJ + photo booth + videography
-- Proof names only: Maria Panning, Deb Hall, Valarie Mountfort, Chelsea Heilman (names Kyaira on the booth), Tessa Parker (Champion Beach House)
+- Proof names only: Maria Panning, Deb Hall, Dustin Cumberlin, Brandy Cumberlin, Samantha Peacock, Valarie Mountfort, Chelsea Heilman (names Kyaira on the booth), Tessa Parker (Champion Beach House)
+- Written-review faces live in `public/reviews/` (Kartra leftovers). Cards use `assetUrl()` so they work under the GitHub Pages `basePath` `/dj-jeffery-isaac`. Do not swap in Unsplash or Kartra template banners.
 - Do not publish Jeff Feuerwerker on the public site
 - Do not claim Akron, Canton, or Cleveland
 - Copyright year: 2026

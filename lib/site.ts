@@ -33,29 +33,92 @@ export const footerNav = [
   { href: "/inquire/", label: "Inquire" },
 ] as const;
 
-export const quotes = [
+export type WrittenReview = {
+  name: string;
+  text: string;
+  photo: string;
+  photoAlt: string;
+  photoKind: "couple" | "portrait";
+  attribution?: string;
+  lowRes?: boolean;
+  still?: {
+    src: string;
+    alt: string;
+    role: "background" | "near";
+  };
+};
+
+export const quotes: WrittenReview[] = [
   {
     name: "Maria Panning",
     text: "Jeff is an amazing DJ! He played all of our favorite songs and kept the party going all night long! Very personable and I recommend him to every bride-to-be! If you're looking for a fun-spirited, professional and stress-free wedding day, Jeff is your guy!",
+    photo: "/reviews/maria-panning.png",
+    photoAlt:
+      "Maria Panning and her groom at their wedding, the groom kissing her hand",
+    photoKind: "couple",
+    still: {
+      src: "/reviews/maria-panning-couple.png",
+      alt: "Maria Panning and her groom at the staircase during their wedding",
+      role: "background",
+    },
   },
   {
     name: "Deb Hall",
     text: "Everything was better than I could've imagined. Absolutely perfect! I'd recommend DJ Jeffery Isaac to anyone in need of excellent service.",
+    photo: "/reviews/deb-hall.jpg",
+    photoAlt: "Deb Hall in a formal wedding portrait",
+    photoKind: "portrait",
+  },
+  {
+    name: "Dustin Cumberlin",
+    text: "DJ Jeff is the best DJ ever! I had the greatest time when he was dropping them beats at my wedding... he had every song and awesome lights. I would strongly recommend him for any event.",
+    photo: "/reviews/dustin-cumberlin.jpg",
+    photoAlt: "Dustin Cumberlin and his bride at their wedding",
+    photoKind: "couple",
+  },
+  {
+    name: "Brandy Cumberlin",
+    text: "He did our wedding. He was absolutely amazing!!! I had such a great day!!",
+    photo: "/reviews/brandy-cumberlin.jpg",
+    photoAlt: "Brandy Cumberlin",
+    photoKind: "portrait",
+  },
+  {
+    name: "Samantha Peacock",
+    text: "The lights, the music, the videos, it was all awesome.",
+    photo: "/reviews/samantha-peacock.png",
+    photoAlt: "Samantha Peacock in a bridal headshot",
+    photoKind: "portrait",
   },
   {
     name: "Valarie Mountfort",
     text: "Jeff made sure to contact me ahead of time to get the list of the bridal party. He gave suggestions on songs when I didn't have one. His lights added something special to our reception. Our ceremony was outside and he was able to get a mic out there with our music. Jeff was funny, upbeat, played songs on request and I could not have asked for a better experience!! Best DJ around the Warren/Youngstown area.",
+    photo: "/reviews/valarie-mountfort.png",
+    photoAlt: "Valarie Mountfort at her wedding reception",
+    photoKind: "portrait",
+    still: {
+      src: "/reviews/valarie-mountfort-cake.png",
+      alt: "Ken and Valarie Mountfort cutting their wedding cake",
+      role: "near",
+    },
   },
   {
     name: "Chelsea Heilman",
     text: "Jeff and Kyaira did an awesome job at our wedding. Jeff was the DJ. He was very professional and had everything in order. He didn't mind answering questions even if it was the same question 100 times. He kept in contact with me all night to make sure there weren't any changes and that we didn't need anything. Kyaira was in charge of the photobooth and she was the absolute sweetest. The pictures had our names on them along with 3 pictures and 2 copies were printed. It was an absolute hit. We did a photo guestbook which was great. I would highly recommend them for DJ and photo services!",
+    photo: "/reviews/chelsea-heilman.png",
+    photoAlt: "Chelsea Heilman at her wedding",
+    photoKind: "portrait",
+    lowRes: true,
   },
   {
     name: "Tessa Parker",
     attribution: "Former owner, Champion Beach House",
     text: "Being a bar owner and working with many DJs through the years, I can honestly say Jeff is one of the best in our area. Professional, friendly, reliable, and very much a crowd pleaser. He provides the music you ask for, and the atmosphere to match. Highly recommended!",
+    photo: "/reviews/tessa-parker.jpg",
+    photoAlt: "Tessa Parker, former owner of Champion Beach House",
+    photoKind: "portrait",
   },
-] as const;
+];
 
 export const films = [
   {
