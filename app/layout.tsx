@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   description:
     "Professional, fun-spirited, stress-free weddings. Ceremony piano and reception DJ for Warren, Youngstown, and Trumbull, Mahoning, Portage, and Columbiana counties.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/dj-jeffery-isaac/favicon.svg" },
   openGraph: {
     title: "DJ Jeffery Isaac — wedding DJ and musician",
     description: site.tagline,
