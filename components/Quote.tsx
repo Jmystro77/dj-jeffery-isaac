@@ -7,7 +7,6 @@ export function Quote({ quote }: { quote: WrittenReview }) {
   return (
     <figure
       className="quote"
-      data-photo={quote.photoKind}
       data-lowres={quote.lowRes ? "true" : undefined}
     >
       {background ? (
@@ -20,13 +19,15 @@ export function Quote({ quote }: { quote: WrittenReview }) {
       ) : null}
       <div className="quote-inner">
         <figcaption className="quote-person">
-          <img
-            className="quote-photo"
-            src={assetUrl(quote.photo)}
-            alt={quote.photoAlt}
-            width={quote.photoKind === "couple" ? 160 : 96}
-            height={quote.photoKind === "couple" ? 124 : 96}
-          />
+          <span className="quote-avatar">
+            <img
+              className="quote-photo"
+              src={assetUrl(quote.photo)}
+              alt={quote.photoAlt}
+              width={96}
+              height={96}
+            />
+          </span>
           <span className="quote-who">
             {quote.name}
             {quote.attribution ? <cite>{quote.attribution}</cite> : null}

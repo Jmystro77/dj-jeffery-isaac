@@ -489,28 +489,28 @@ a:hover {
   margin: 0 0 1rem;
 }
 
-.quote-photo {
+.quote-avatar {
   display: block;
   width: 4.75rem;
   height: 4.75rem;
   flex-shrink: 0;
-  object-fit: cover;
-  object-position: center 20%;
+  overflow: hidden;
   border-radius: 50%;
   border: 1px solid var(--line-strong);
   background: #1a1210;
 }
 
-.quote[data-photo="couple"] .quote-photo {
-  width: 7.4rem;
-  height: 5.7rem;
-  border-radius: 3px;
-  object-position: center 40%;
+.quote-photo {
+  display: block;
+  width: 4.75rem;
+  height: 4.75rem;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
 }
 
 .quote[data-lowres="true"] .quote-photo {
-  width: 4.25rem;
-  height: 4.25rem;
   image-rendering: auto;
 }
 
