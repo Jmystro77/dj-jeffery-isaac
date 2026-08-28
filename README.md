@@ -2,22 +2,28 @@
 
 Custom cinematic marketing site for [djjefferyisaac.com](https://www.djjefferyisaac.com/). Replaces the Kartra sales letter. Booking later becomes a GoHighLevel embed on this site — not a GHL page and not Kartra.
 
+**Live site (GitHub Pages):** [https://jmystro77.github.io/dj-jeffery-isaac/](https://jmystro77.github.io/dj-jeffery-isaac/)
+
+[djjefferyisaac.com](https://www.djjefferyisaac.com/) still points at the Kartra sales letter until DNS is changed later. This repo does not use Vercel.
+
 **DJ Jeffery Isaac** (never Issac). Voice is first person. Weddings first. Warren, Youngstown, and Trumbull / Mahoning / Portage / Columbiana only.
 
 ## Local
+
+The site is configured as a project Pages export (`basePath` and `assetPrefix` are `/dj-jeffery-isaac`).
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000/dj-jeffery-isaac/](http://localhost:3000/dj-jeffery-isaac/).
 
 ```bash
 npm run build
 ```
 
-Writes a static export to `out/`. Host that folder on any static host or Vercel/Netlify. Do not put the site on GHL pages or Kartra.
+Writes a static export to `out/`. A GitHub Actions workflow deploys that folder to GitHub Pages on every push to `main`. Do not put the site on GHL pages or Kartra.
 
 ## Pages
 

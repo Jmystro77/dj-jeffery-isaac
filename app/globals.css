@@ -99,7 +99,7 @@ a:hover {
 
 .grain {
   opacity: 0.07;
-  background-image: url("/grain.svg");
+  background-image: url("/dj-jeffery-isaac/grain.svg");
   background-size: 180px 180px;
   mix-blend-mode: overlay;
 }
@@ -308,7 +308,7 @@ a:hover {
   background:
     linear-gradient(180deg, rgba(10, 8, 7, 0.25) 0%, rgba(10, 8, 7, 0.55) 46%, rgba(10, 8, 7, 0.92) 100%),
     radial-gradient(ellipse 70% 50% at 70% 40%, rgba(224, 164, 90, 0.18), transparent 55%),
-    url("/images/hero-reception.jpg") center / cover no-repeat,
+    url("/dj-jeffery-isaac/images/hero-reception.jpg") center / cover no-repeat,
     #1a100c;
 }
 
@@ -768,7 +768,7 @@ fieldset.field {
   min-height: 18rem;
   background:
     linear-gradient(180deg, rgba(10, 8, 7, 0.15), rgba(10, 8, 7, 0.55)),
-    url("/images/piano.jpg") center / cover no-repeat,
+    url("/dj-jeffery-isaac/images/piano.jpg") center / cover no-repeat,
     #1a1210;
   border: 1px solid var(--line);
 }
@@ -776,7 +776,7 @@ fieldset.field {
 .figure-reception {
   background-image:
     linear-gradient(180deg, rgba(10, 8, 7, 0.1), rgba(10, 8, 7, 0.5)),
-    url("/images/reception-two.jpg");
+    url("/dj-jeffery-isaac/images/reception-two.jpg");
   background-size: cover;
   background-position: center;
 }
