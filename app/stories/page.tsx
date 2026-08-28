@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { FilmCard } from "@/components/FilmCard";
 import { Quote } from "@/components/Quote";
-import { films, quotes } from "@/lib/site";
+import { films, quotesByLength } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Stories",
@@ -42,8 +42,8 @@ export default function StoriesPage() {
         <div className="wrap">
           <p className="kicker">Written</p>
           <h2 className="section-title">Eight written reviews. Their photos.</h2>
-          <div className="grid-2" style={{ marginTop: "2rem" }}>
-            {quotes.map((quote) => (
+          <div className="quote-masonry" style={{ marginTop: "2rem" }}>
+            {quotesByLength.map((quote) => (
               <Quote key={quote.name} quote={quote} />
             ))}
           </div>

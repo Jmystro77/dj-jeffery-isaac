@@ -426,6 +426,19 @@ a:hover {
   gap: 1.25rem;
 }
 
+.quote-masonry {
+  column-count: 1;
+  column-gap: 1.25rem;
+}
+
+.quote-masonry > .quote {
+  width: 100%;
+  margin: 0 0 1.25rem;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
 .card,
 .quote,
 .film,
@@ -446,6 +459,8 @@ a:hover {
   padding: 0;
   overflow: hidden;
   display: grid;
+  height: fit-content;
+  align-self: start;
 }
 
 .quote-still-bg {
@@ -899,6 +914,10 @@ fieldset.field {
 
   .grid-2 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .quote-masonry {
+    column-count: 2;
   }
 
   .grid-3 {
