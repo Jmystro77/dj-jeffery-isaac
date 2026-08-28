@@ -493,24 +493,16 @@ a:hover {
   display: block;
   width: 4.75rem;
   height: 4.75rem;
+  aspect-ratio: 1;
   flex-shrink: 0;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
   border-radius: 50%;
   border: 1px solid var(--line-strong);
   background: #1a1210;
 }
 
-.quote[data-photo="couple"] .quote-photo {
-  width: 7.4rem;
-  height: 5.7rem;
-  border-radius: 3px;
-  object-position: center 40%;
-}
-
 .quote[data-lowres="true"] .quote-photo {
-  width: 4.25rem;
-  height: 4.25rem;
   image-rendering: auto;
 }
 
