@@ -489,17 +489,25 @@ a:hover {
   margin: 0 0 1rem;
 }
 
+.quote-avatar {
+  display: block;
+  width: 4.75rem;
+  height: 4.75rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: #1a1210;
+}
+
 .quote-photo {
   display: block;
   width: 4.75rem;
   height: 4.75rem;
-  aspect-ratio: 1;
-  flex-shrink: 0;
+  max-width: none;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
-  border: 1px solid var(--line-strong);
-  background: #1a1210;
 }
 
 .quote[data-lowres="true"] .quote-photo {
