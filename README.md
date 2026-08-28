@@ -85,4 +85,4 @@ Hero and supporting stills are graded Pexels photographs (night tent reception, 
 
 ## Stack
 
-Next.js App Router, static export, no CMS. Shared copy lives in `lib/site.ts`.
+Next.js App Router, static export, no CMS. Shared copy lives in `lib/site.ts`. Hosted on GitHub Pages from `main`.
