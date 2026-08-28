@@ -56,8 +56,7 @@ export default function AddOnsPage() {
             <p>
               Four films already exist: Rocky &amp; Jess, Craig &amp; Chelsea,
               Marco &amp; Charlotte, and Byan &amp; Rena. The Stories page holds
-              their names and frames. Real files get wired when the URLs are
-              ready — I will not invent them here.
+              the players.
             </p>
             <p>
               <Link href="/stories/">See the films and the written proof</Link>

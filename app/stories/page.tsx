@@ -20,8 +20,7 @@ export default function StoriesPage() {
           <h1>What they said after the last song.</h1>
           <p className="lede">
             These names already exist. I am not inventing a chorus behind them.
-            Four couple films sit below as frames until the real files are
-            attached.
+            Four couple films sit below.
           </p>
         </div>
       </header>

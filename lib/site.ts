@@ -1,3 +1,11 @@
+/** Must match `basePath` / `assetPrefix` in next.config.ts (GitHub Pages). */
+export const pagesBasePath = "/dj-jeffery-isaac";
+
+export function assetUrl(path: string) {
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${pagesBasePath}${normalized}`;
+}
+
 export const site = {
   name: "DJ Jeffery Isaac",
   wordmark: "DJ JEFFERY ISAAC",
@@ -50,10 +58,30 @@ export const quotes = [
 ] as const;
 
 export const films = [
-  { slug: "rocky-jess", couple: "Rocky & Jess" },
-  { slug: "craig-chelsea", couple: "Craig & Chelsea" },
-  { slug: "marco-charlotte", couple: "Marco & Charlotte" },
-  { slug: "byan-rena", couple: "Byan & Rena" },
+  {
+    slug: "rocky-jess",
+    couple: "Rocky & Jess",
+    src: "/videos/112_Rocky_Jessica_Wedding_Testimonial.mp4",
+    type: "video/mp4",
+  },
+  {
+    slug: "craig-chelsea",
+    couple: "Craig & Chelsea",
+    src: "/videos/61_DJ_Testimonial_Craig_Chelsea.mov",
+    type: "video/mp4",
+  },
+  {
+    slug: "marco-charlotte",
+    couple: "Marco & Charlotte",
+    src: "/videos/39_DJ_Testimonial_Marco_and_Charlotte.mp4",
+    type: "video/mp4",
+  },
+  {
+    slug: "byan-rena",
+    couple: "Byan & Rena",
+    src: "/videos/38_DJ_Testimonial_Bryan_and_Rena.mp4",
+    type: "video/mp4",
+  },
 ] as const;
 
 export const faqs = [

@@ -34,7 +34,7 @@ Writes a static export to `out/`. A GitHub Actions workflow deploys that folder 
 | `/add-ons/` | Photo booth and videography |
 | `/live-music/` | Piano / jazz (available, not a guarantee) |
 | `/areas/` | Service map |
-| `/stories/` | Named proof + film frames |
+| `/stories/` | Named proof + four couple films |
 | `/faq/` | Questions |
 | `/inquire/` | Check my date |
 
@@ -56,18 +56,18 @@ It lives at the top of the local form in `components/InquireForm.tsx`.
 4. Remove the mailto fallback once the embed is live.
 5. Do not fake a success state. If GHL is not connected, the current form opens the couple’s email app to `djjefferyisaac@gmail.com` and says so in plain language.
 
-## Wire real couple films
+## Couple films
 
-Four films exist. Frames on `/stories/` and the home page are placeholders — no video files are invented.
+Four Kartra leftover testimonials live in `public/videos/` and play on `/stories/` (and the home-page film row) through `FilmCard`. Sources use `assetUrl()` so they work under the GitHub Pages `basePath` `/dj-jeffery-isaac`.
 
-| Couple | Slug | Where to add the URL |
-| --- | --- | --- |
-| Rocky & Jess | `rocky-jess` | `lib/site.ts` → `films` |
-| Craig & Chelsea | `craig-chelsea` | same |
-| Marco & Charlotte | `marco-charlotte` | same |
-| Byan & Rena | `byan-rena` | same |
+| Couple (site label) | File |
+| --- | --- |
+| Rocky & Jess | `112_Rocky_Jessica_Wedding_Testimonial.mp4` |
+| Craig & Chelsea | `61_DJ_Testimonial_Craig_Chelsea.mov` |
+| Marco & Charlotte | `39_DJ_Testimonial_Marco_and_Charlotte.mp4` |
+| Byan & Rena | `38_DJ_Testimonial_Bryan_and_Rena.mp4` |
 
-Add an optional `src` (YouTube, Vimeo, or file URL) on each film object, then update `components/FilmCard.tsx` to render a muted, click-to-play or poster-and-link player. No autoplay sound.
+HTML5 players: controls on, no autoplay, no autoplay sound. Promo ads are not on Stories.
 
 ## Brand
 
