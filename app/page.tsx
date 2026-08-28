@@ -117,7 +117,7 @@ export default function HomePage() {
           <p className="kicker">See the work</p>
           <h2 className="section-title">Four couple films.</h2>
           <p className="lede">
-            Names are real. Frames are placeholders until the files are wired in.
+            Names are real. Tap play on a couple film.
           </p>
           <div className="grid-4" style={{ marginTop: "2rem" }}>
             {films.map((film, index) => (

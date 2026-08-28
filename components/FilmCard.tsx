@@ -1,4 +1,4 @@
-import { films } from "@/lib/site";
+import { assetUrl, films } from "@/lib/site";
 
 export function FilmCard({
   film,
@@ -9,11 +9,18 @@ export function FilmCard({
 }) {
   return (
     <figure className="film" data-tone={index % 4} data-film={film.slug}>
-      <div className="film-frame" aria-hidden="true" />
-      <span className="play-mark" aria-hidden="true" />
+      <video
+        className="film-player"
+        controls
+        playsInline
+        preload="metadata"
+        aria-label={`${film.couple} wedding testimonial`}
+      >
+        <source src={assetUrl(film.src)} type={film.type} />
+      </video>
       <figcaption>
         {film.couple}
-        <p className="film-meta">Couple film · frame placeholder</p>
+        <p className="film-meta">Couple film</p>
       </figcaption>
     </figure>
   );
