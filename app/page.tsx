@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { FilmCard } from "@/components/FilmCard";
 import { Quote } from "@/components/Quote";
-import { films, quotes, site } from "@/lib/site";
+import { films, quotesByLength, site } from "@/lib/site";
 
 export default function HomePage() {
   return (
@@ -104,8 +104,8 @@ export default function HomePage() {
         <div className="wrap">
           <p className="kicker">In their words</p>
           <h2 className="section-title">Proof, not a sales letter.</h2>
-          <div className="grid-2" style={{ marginTop: "2rem" }}>
-            {quotes.slice(0, 4).map((quote) => (
+          <div className="quote-masonry" style={{ marginTop: "2rem" }}>
+            {quotesByLength.slice(0, 4).map((quote) => (
               <Quote key={quote.name} quote={quote} />
             ))}
           </div>

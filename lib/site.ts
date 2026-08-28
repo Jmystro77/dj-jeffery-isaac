@@ -111,6 +111,11 @@ export const quotes: WrittenReview[] = [
   },
 ];
 
+/** Shortest first so masonry rows keep similar-height cards together. */
+export const quotesByLength = [...quotes].sort(
+  (a, b) => a.text.length - b.text.length,
+);
+
 export const films = [
   {
     slug: "rocky-jess",
