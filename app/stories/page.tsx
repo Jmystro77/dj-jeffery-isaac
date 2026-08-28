@@ -8,7 +8,7 @@ import { films, quotes } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Stories",
   description:
-    "Real names from DJ Jeffery Isaac weddings — Maria Panning, Deb Hall, Valarie Mountfort, Chelsea Heilman, Tessa Parker, and four couple films.",
+    "Real names and photos from DJ Jeffery Isaac weddings — Maria Panning, Deb Hall, Dustin Cumberlin, Brandy Cumberlin, Samantha Peacock, Valarie Mountfort, Chelsea Heilman, Tessa Parker, and four couple films.",
 };
 
 export default function StoriesPage() {
@@ -19,8 +19,9 @@ export default function StoriesPage() {
           <p className="kicker">Proof</p>
           <h1>What they said after the last song.</h1>
           <p className="lede">
-            These names already exist. I am not inventing a chorus behind them.
-            Four couple films sit below.
+            These names already exist. Their photos are the ones they sent.
+            I am not inventing a chorus behind them. Four couple films sit
+            below.
           </p>
         </div>
       </header>
@@ -40,7 +41,7 @@ export default function StoriesPage() {
       <section className="section">
         <div className="wrap">
           <p className="kicker">Written</p>
-          <h2 className="section-title">Five people. Their words.</h2>
+          <h2 className="section-title">Eight written reviews. Their photos.</h2>
           <div className="grid-2" style={{ marginTop: "2rem" }}>
             {quotes.map((quote) => (
               <Quote key={quote.name} quote={quote} />
