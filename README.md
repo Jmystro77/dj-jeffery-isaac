@@ -1,6 +1,6 @@
 # DJ Jeffery Isaac
 
-Custom cinematic marketing site for [djjefferyisaac.com](https://www.djjefferyisaac.com/). Replaces the Kartra sales letter. Booking later becomes a GoHighLevel embed on this site — not a GHL page and not Kartra.
+Custom cinematic marketing site for [djjefferyisaac.com](https://www.djjefferyisaac.com/). Replaces the Kartra sales letter. **Check my date** is the live GoHighLevel form embed from the DJ Jeffrey Isaac GHL sub-account — not a GHL page, not Kartra, and not another location’s form.
 
 **Live site (GitHub Pages):** [https://jmystro77.github.io/dj-jeffery-isaac/](https://jmystro77.github.io/dj-jeffery-isaac/)
 
@@ -40,21 +40,22 @@ Writes a static export to `out/`. A GitHub Actions workflow deploys that folder 
 
 Primary CTA everywhere: **Check my date**. Secondary: **Call 330-240-0915**. Pricing is on the call — there is no Prices button.
 
-## Swap in a GoHighLevel form
+## Check my date (GoHighLevel embed)
 
-The inquire page already contains this HTML comment:
+`/inquire/` is the date-check form. Every primary **Check my date** CTA (header, hero, footer, inner pages) goes there. Phone links stay `tel:3302400915`.
 
-```html
-<!-- GHL_FORM_EMBED -->
-```
+The form is the live GHL embed from **DJ Jeffrey Isaac** (location `WUKHpbDAraG4Q59Og5z2`), not CIA Dog Training and not the Best Talk Yet location.
 
-It lives at the top of the local form in `components/InquireForm.tsx`.
+| | |
+| --- | --- |
+| Form name | Check my date |
+| Form id | `y1G7X7yjyZ1GxVTwZR00` |
+| Form URL | https://ai.besttalkyet.com/widget/form/y1G7X7yjyZ1GxVTwZR00 |
+| Widget host | `ai.besttalkyet.com` (agency widget host) |
+| Embed script | https://ai.besttalkyet.com/js/form_embed.js |
+| Fields | First Name, Last Name, Phone, Email, Wedding Date, Venue, City, Guest Count, Services (DJ / Photo Booth / Video) |
 
-1. In GHL, create the form (first name, last name, email, phone, wedding date, venue, city, guest count, services).
-2. Copy the embed snippet.
-3. Replace the `<form>…</form>` in `InquireForm.tsx` (or the inquire page) with the embed. Keep the comment so the next person can find it.
-4. Remove the mailto fallback once the embed is live.
-5. Do not fake a success state. If GHL is not connected, the current form opens the couple’s email app to `djjefferyisaac@gmail.com` and says so in plain language.
+The embed lives in `components/InquireForm.tsx` behind `{/* GHL_FORM_EMBED */}`. Submit goes to GHL — there is no local mailto / fake-success form. Do not point this iframe at CIA GHL, Kartra, OnceHub, djfinder, or PocketSuite. Do not invent a different form id or host.
 
 ## Couple films
 
