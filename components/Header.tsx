@@ -77,6 +77,9 @@ export function Header() {
             </li>
           ))}
           <li>
+            <Link href="/inquire/">Check my date</Link>
+          </li>
+          <li>
             <a href={site.phoneHref}>Call {site.phoneDisplay}</a>
           </li>
         </ul>

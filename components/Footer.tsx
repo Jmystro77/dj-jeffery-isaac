@@ -23,6 +23,11 @@ export function Footer() {
               </li>
             ))}
           </ul>
+          <p>
+            <Link className="btn" href="/inquire/">
+              Check my date
+            </Link>
+          </p>
           <p>© Copyright {site.year} {site.name}. All rights reserved.</p>
         </div>
       </div>
