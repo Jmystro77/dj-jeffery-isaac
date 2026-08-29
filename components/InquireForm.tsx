@@ -14,7 +14,7 @@ export function InquireForm() {
         src={GHL_FORM_SRC}
         style={{
           width: "100%",
-          height: "100%",
+          height: `${GHL_FORM_HEIGHT}px`,
           border: "none",
           borderRadius: 8,
         }}
