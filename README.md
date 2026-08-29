@@ -56,6 +56,10 @@ It lives at the top of the local form in `components/InquireForm.tsx`.
 4. Remove the mailto fallback once the embed is live.
 5. Do not fake a success state. If GHL is not connected, the current form opens the couple’s email app to `djjefferyisaac@gmail.com` and says so in plain language.
 
+## Home hero
+
+The home hero plays `public/videos/60_DJ_Jeffery_Isaac_Promo_Video.mp4` as a muted, looping background (`HeroMedia`). The still `public/images/hero-reception.jpg` stays as the poster and the reduced-motion fallback. The source uses `assetUrl()` so it works under the GitHub Pages `basePath` `/dj-jeffery-isaac`. Promo ads are not on Stories.
+
 ## Couple films
 
 Four Kartra leftover testimonials live in `public/videos/` and play on `/stories/` (and the home-page film row) through `FilmCard`. Sources use `assetUrl()` so they work under the GitHub Pages `basePath` `/dj-jeffery-isaac`.

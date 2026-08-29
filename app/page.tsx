@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { FilmCard } from "@/components/FilmCard";
+import { HeroMedia } from "@/components/HeroMedia";
 import { Quote } from "@/components/Quote";
 import { films, quotesByLength, site } from "@/lib/site";
 
@@ -8,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="hero-media" role="img" aria-label="Night reception in warm tungsten light" />
+        <HeroMedia />
         <div className="hero-inner">
           <p className="eyebrow">DJ · Photo booth · Videography</p>
           <h1>I play the ceremony. I mix the reception.</h1>
