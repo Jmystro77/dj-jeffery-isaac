@@ -116,6 +116,13 @@ export const quotesByLength = [...quotes].sort(
   (a, b) => a.text.length - b.text.length,
 );
 
+/** Home hero only. Do not add this promo to Stories. */
+export const heroPromo = {
+  src: "/videos/60_DJ_Jeffery_Isaac_Promo_Video.mp4",
+  type: "video/mp4",
+  poster: "/images/hero-reception.jpg",
+} as const;
+
 export const films = [
   {
     slug: "rocky-jess",
